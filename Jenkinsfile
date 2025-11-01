@@ -38,7 +38,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        withCredentials([usernamePassword(credentialsId: 'my-docker-hub-credentials-id', 
+                        withCredentials([usernamePassword(credentialsId: 'faa94113-bb73-4578-b8fa-27d4ac6ff5b0', 
                                                          usernameVariable: 'DOCKER_USERNAME', 
                                                          passwordVariable: 'DOCKER_PASSWORD')]) {
                             // Explicit login before push
